@@ -20,5 +20,5 @@ architecture struct of full_adder_single_bit_arch is
 
 begin
   sum  <= a xor b xor cin;
-  cout <= a and b or a and cin or b and cin;
+  cout <= (a and b) or (a and cin) or (b and cin);
 end struct;

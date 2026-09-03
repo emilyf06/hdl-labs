@@ -1,0 +1,100 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/hdl-labs/hdl-labs/lab1/full_adder_single_bit_arch/sim/script
+T_opt
+!s110 1788462353
+Vkhlf_@95gGQk:bKNOi51c2
+04 29 4 work full_adder_single_bit_arch_tb arch 1
+=1-b07b2521aec4-6a99c511-9c-4c04
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Efull_adder_single_bit_arch
+Z1 w1788462207
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z5 8../../src/full_adder_single_bit_arch.vhd
+Z6 F../../src/full_adder_single_bit_arch.vhd
+l0
+L9
+VcJ1IlF8KD4U_0RFZoNQgB0
+!s100 D0:NUAi@:=V72^=2^oSlT2
+Z7 OL;C;2019.2;69
+31
+Z8 !s110 1788462352
+!i10b 1
+Z9 !s108 1788462352.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../src/full_adder_single_bit_arch.vhd|
+Z11 !s107 ../../src/full_adder_single_bit_arch.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 26 full_adder_single_bit_arch 0 22 cJ1IlF8KD4U_0RFZoNQgB0
+l26
+L19
+VKSM7<G6AVnonHYfi_QULZ1
+!s100 V>`1kNLT[S_kcDC@PTPk31
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Efull_adder_single_bit_arch_tb
+R1
+R3
+R4
+R0
+Z14 8../src/full_adder_single_bit_arch_tb.vhd
+Z15 F../src/full_adder_single_bit_arch_tb.vhd
+l0
+L8
+VIPSzLZoYkEo5^605Z;:1_3
+!s100 Q8a33XN?>gmbg93FRaULL0
+R7
+31
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-93|-work|work|../src/full_adder_single_bit_arch_tb.vhd|
+Z17 !s107 ../src/full_adder_single_bit_arch_tb.vhd|
+!i113 0
+R12
+R13
+Aarch
+R3
+R4
+DEx4 work 29 full_adder_single_bit_arch_tb 0 22 IPSzLZoYkEo5^605Z;:1_3
+l29
+L11
+Vz2F2f8@MkKAAFTm@_mE_l3
+!s100 0]SLA_L6>d4h[R?VFLFde0
+R7
+31
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 0
+R12
+R13

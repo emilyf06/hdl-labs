@@ -16,6 +16,8 @@ entity full_adder_single_bit_beh is
   );
 end full_adder_single_bit_beh;
 
+
+
 architecture beh of full_adder_single_bit_beh is
 
 signal x : std_logic_vector(1 downto 0);

@@ -6,7 +6,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity full_adder_single_bit_beh is
+entity full_adder_single_bit_arch is
   port (
     a    : in std_logic;
     b    : in std_logic;
@@ -14,9 +14,9 @@ entity full_adder_single_bit_beh is
     sum  : out std_logic;
     cout : out std_logic
   );
-end full_adder_single_bit_beh;
+end full_adder_single_bit_arch;
 
-architecture beh of full_adder_single_bit_beh is
+architecture beh of full_adder_single_bit_arch is
 
   signal x    : std_logic_vector(1 downto 0);
   signal av   : std_logic_vector(1 downto 0);

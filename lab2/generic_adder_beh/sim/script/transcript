@@ -65,3 +65,4 @@ change sim:/generic_adder_tb/SEQUENTIAL_FLAG FALSE
 # ** Warning: (vsim-3933) '/generic_adder_tb/SEQUENTIAL_FLAG' is considered a constant, changing its value may have no effect.
 # 
 run
+run -all

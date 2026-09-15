@@ -1,0 +1,104 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/elf3179/hdl-labs/lab2/generic_adder_beh/sim/script
+T_opt
+Z1 !s110 1789500964
+VkDd?^fdgT?WSCb4N;S2Nc2
+04 16 4 work generic_adder_tb arch 1
+=1-30d042f2facd-6aa99e24-261-1210
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Egeneric_adder_beh
+Z2 w1789499274
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z6 8../../src/generic_adder_beh.vhd
+Z7 F../../src/generic_adder_beh.vhd
+l0
+L9
+VZM:m22W6n_OU0[flII;@<2
+!s100 OOaH7j]OJo2FNLlk`2n1j2
+Z8 OL;C;2019.2;69
+31
+R1
+!i10b 1
+Z9 !s108 1789500964.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../src/generic_adder_beh.vhd|
+Z11 !s107 ../../src/generic_adder_beh.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R3
+R4
+R5
+DEx4 work 17 generic_adder_beh 0 22 ZM:m22W6n_OU0[flII;@<2
+l27
+L22
+VXiACzM[7Kd];V;iL`X2`K1
+!s100 J0QDzX5NX;aLCSO9EOMGC0
+R8
+31
+R1
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Egeneric_adder_tb
+R2
+Z14 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R3
+R4
+R5
+R0
+Z15 8../src/generic_adder_tb.vhd
+Z16 F../src/generic_adder_tb.vhd
+l0
+L10
+Ve9?:`H@Q`7ea6f0VdBTc93
+!s100 BA:7GkPR^dBaQ<>zdHe^j2
+R8
+31
+R1
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|../src/generic_adder_tb.vhd|
+Z18 !s107 ../src/generic_adder_tb.vhd|
+!i113 0
+R12
+R13
+Aarch
+R14
+R3
+R4
+R5
+DEx4 work 16 generic_adder_tb 0 22 e9?:`H@Q`7ea6f0VdBTc93
+l37
+L13
+VSL]GdN3zHSo45I_2T_D=]1
+!s100 QjeGMCUaQL4Y>[d@i]MG:2
+R8
+31
+R1
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

@@ -17,20 +17,20 @@ architecture arch of generic_adder_tb is
       bits : integer := 16
     );
     port (
-      a    : in std_logic_vector(bits - 15 downto 0);--convert to 4 bit adder
-      b    : in std_logic_vector(bits - 15 downto 0);
+      a    : in std_logic_vector(bits - 1 downto 0);
+      b    : in std_logic_vector(bits - 1 downto 0);
       cin  : in std_logic;
-      sum  : out std_logic_vector(bits - 15 downto 0);
+      sum  : out std_logic_vector(bits - 1 downto 0);
       cout : out std_logic
     );
   end component generic_adder_beh;
 
   constant NUM_BITS        : integer                                 := 4;
   constant SEQUENTIAL_FLAG : boolean                                 := true; -- false : concurrent stimuli, true: sequential stimuli
-  signal a                 : std_logic_vector(NUM_BITS - 15 downto 0) := (others => '0');
-  signal b                 : std_logic_vector(NUM_BITS - 15 downto 0) := (others => '0');
+  signal a                 : std_logic_vector(NUM_BITS - 1 downto 0) := (others => '0');
+  signal b                 : std_logic_vector(NUM_BITS - 1 downto 0) := (others => '0');
   signal cin               : std_logic                               := '0';
-  signal sum               : std_logic_vector(NUM_BITS - 15 downto 0);
+  signal sum               : std_logic_vector(NUM_BITS - 1 downto 0);
   signal cout              : std_logic;
   signal cin_guard         : std_logic_vector(NUM_BITS - 2 downto 0) := (others => '0');
 
@@ -77,8 +77,13 @@ begin
   concurrent_stimuli : if not SEQUENTIAL_FLAG generate
     b(0) <= not b(0) after 10 ns;
     b(1) <= not b(1) after 20 ns;
-    a(0) <= not a(0) after 40 ns;
-    a(1) <= not a(1) after 80 ns;
+    b(2) <= not a(0) after 40 ns; --added bits 2,3
+    b(3) <= not a(1) after 80 ns;
+
+    a(0) <= not b(0) after 10 ns;
+    a(1) <= not b(1) after 20 ns;
+    a(2) <= not b(2) after 40 ns; --added bits 2,3
+    a(3) <= not b(3) after 80 ns;
   end generate concurrent_stimuli;
 
   math_check : process (sum)

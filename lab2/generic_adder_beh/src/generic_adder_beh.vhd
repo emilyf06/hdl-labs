@@ -8,13 +8,13 @@ use ieee.numeric_std.all;
 
 entity generic_adder_beh is
   generic (
-    bits    : integer := 16
+    bits    : integer := 16 --handle 0-15
   );
   port (
-    a       : in  std_logic_vector(bits- 15 downto 0);--change to 4 bit adder
-    b       : in  std_logic_vector(bits- 15 downto 0);
+    a       : in  std_logic_vector(bits- 1 downto 0);--change to 4 bit adder
+    b       : in  std_logic_vector(bits- 1 downto 0);
     cin     : in  std_logic;
-    sum     : out std_logic_vector(bits- 15 downto 0);
+    sum     : out std_logic_vector(bits- 1 downto 0);
     cout    : out std_logic
   );
 end entity generic_adder_beh;
@@ -26,6 +26,6 @@ signal cin_guard  : std_logic_vector(bits-1 downto 0) := (others => '0');
 
 begin
   sum_temp  <= std_logic_vector(unsigned('0' & a) + unsigned('0' & b) + unsigned(cin_guard & cin));
-  sum       <= sum_temp(bits- 15 downto 0);--change to 4 bit adder
+  sum       <= sum_temp(bits- 1 downto 0);--change to 4 bit adder
   cout      <= sum_temp(bits); -- Carry is the most significant bit
 end beh;

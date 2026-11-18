@@ -1,0 +1,287 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dS:/Documents/labs/lab4/frazier_add_sub/sim/script
+T_opt
+!s110 1729887025
+Vzz;No8=SYI80T?H?zL_D00
+04 12 4 work adder_sub_tb arch 1
+=1-b07b251b0693-671bfb30-2fc-1564
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+R0
+Eadder_sub_tb
+Z1 w1765962702
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/cpet343labs/all_HDL_Labs/lab4/frazier_add_sub/sim/script
+Z6 8../src/adder_sub_tb.vhd
+Z7 F../src/adder_sub_tb.vhd
+l0
+L9
+V[[[m<TJ>k;]gTEULXi<;>3
+!s100 =e@aN8WnCnA2TMdK]Fh3j1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1765967823
+!i10b 1
+Z10 !s108 1765967823.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|../src/adder_sub_tb.vhd|
+Z12 !s107 ../src/adder_sub_tb.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+Z15 DEx4 work 12 adder_sub_tb 0 22 [[[m<TJ>k;]gTEULXi<;>3
+l45
+L13
+Z16 Va2`hBeFbi_z:@k90YPnP[2
+Z17 !s100 YgTHXOc8_7@flMXk=V=i?2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pcomponents
+R2
+R3
+R4
+R1
+R5
+8../../src/components.vhd
+F../../src/components.vhd
+l0
+L9
+VXb3zjSj1GzU=_@bRNj9Kg1
+!s100 ^ZBdC0F^2`W;bN8LK1j^Z1
+R8
+31
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-93|-work|work|../../src/components.vhd|
+!s107 ../../src/components.vhd|
+!i113 1
+R13
+R14
+Eedge_sync
+R1
+R3
+R4
+R5
+Z18 8../../src/edge_sync.vhd
+Z19 F../../src/edge_sync.vhd
+l0
+L9
+V7g@`1RQb]]n_TWHo96KAX3
+!s100 MHAH?;ZaoVe0cXd;SHc2H1
+R8
+31
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-93|-work|work|../../src/edge_sync.vhd|
+Z21 !s107 ../../src/edge_sync.vhd|
+!i113 1
+R13
+R14
+Aarch
+R3
+R4
+DEx4 work 9 edge_sync 0 22 7g@`1RQb]]n_TWHo96KAX3
+l29
+L18
+VHM[nbQ;iLRIjUA7GV5Tek3
+!s100 iKCL0S:@OmdbEd04ShkFi2
+R8
+31
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14
+Efrazier_add_sub
+R1
+Z22 DPx4 work 10 components 0 22 Xb3zjSj1GzU=_@bRNj9Kg1
+R2
+R3
+R4
+R5
+Z23 8../../src/frazier_add_sub.vhd
+Z24 F../../src/frazier_add_sub.vhd
+l0
+L10
+V^X3UnhXb<78e;n=FAz8lP0
+!s100 ];4nEln2Eman1<fcK>K]=0
+R8
+31
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-93|-work|work|../../src/frazier_add_sub.vhd|
+Z26 !s107 ../../src/frazier_add_sub.vhd|
+!i113 1
+R13
+R14
+Abeh
+R22
+R2
+R3
+R4
+DEx4 work 15 frazier_add_sub 0 22 ^X3UnhXb<78e;n=FAz8lP0
+l38
+L24
+VbFm=IdRVIbF<6o6_z1eW;0
+!s100 V7PU^4:CA1j=K2j7VQ=So0
+R8
+31
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 1
+R13
+R14
+Egeneric_add_sub
+R1
+R2
+R3
+R4
+R5
+Z27 8../../src/generic_add_sub.vhd
+Z28 F../../src/generic_add_sub.vhd
+l0
+L9
+VLZ3PlUU_K;^M[2m[Z6V?D3
+!s100 IAR1RRiOW8mbg_2cFRBz`1
+R8
+31
+R9
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|-93|-work|work|../../src/generic_add_sub.vhd|
+Z30 !s107 ../../src/generic_add_sub.vhd|
+!i113 1
+R13
+R14
+Abeh
+R2
+R3
+R4
+DEx4 work 15 generic_add_sub 0 22 LZ3PlUU_K;^M[2m[Z6V?D3
+l26
+L21
+V?1Te<<PJZf1BoE1^6R_Df3
+!s100 :>Z5KgIcTPA4CA;X612id0
+R8
+31
+R9
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13
+R14
+Eseven_seg_disp
+R1
+R2
+R3
+R4
+R5
+Z31 8../../src/seven_seg_disp.vhd
+Z32 F../../src/seven_seg_disp.vhd
+l0
+L11
+V;MINQ<24di2^^EIY9mHJX3
+!s100 ca9QO2:9S0^D3QYjMa8V62
+R8
+31
+R9
+!i10b 1
+R10
+Z33 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg_disp.vhd|
+Z34 !s107 ../../src/seven_seg_disp.vhd|
+!i113 1
+R13
+R14
+Aarch
+R2
+R3
+R4
+DEx4 work 14 seven_seg_disp 0 22 ;MINQ<24di2^^EIY9mHJX3
+l40
+L20
+V;]zEBCZj]R;g@ljN^Bf580
+!s100 IDWh=o2VeggX?e5KJb0F93
+R8
+31
+R9
+!i10b 1
+R10
+R33
+R34
+!i113 1
+R13
+R14
+Esync_to_three
+R1
+R3
+R4
+R5
+Z35 8../../src/sync_to_three.vhd
+Z36 F../../src/sync_to_three.vhd
+l0
+L7
+VM4KGgY7]kf>f]6oSEAg9Y1
+!s100 OlRBkjfY^0^OHLeI8J`P?1
+R8
+31
+R9
+!i10b 1
+R10
+Z37 !s90 -reportprogress|300|-93|-work|work|../../src/sync_to_three.vhd|
+Z38 !s107 ../../src/sync_to_three.vhd|
+!i113 1
+R13
+R14
+Aarch
+R3
+R4
+DEx4 work 13 sync_to_three 0 22 M4KGgY7]kf>f]6oSEAg9Y1
+l21
+L16
+VBOC4]mheI:9Oj`BiQV^P93
+!s100 `7TQLSe_i1QRXJBKckH>J1
+R8
+31
+R9
+!i10b 1
+R10
+R37
+R38
+!i113 1
+R13
+R14

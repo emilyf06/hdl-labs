@@ -1,11 +1,12 @@
 -------------------------------------------------------------------------------
 -- Dr. Kaputa
--- blink top
+--Emily Francisco
+-- state machine top
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity State_machine  is
+entity state_machine  is
   port (
     clk             : in std_logic; 
     reset           : in std_logic;
@@ -14,7 +15,7 @@ entity State_machine  is
   );  
 end; 
 
-architecture beh of State_machine is
+architecture beh of state_machine is
   signal current_state       :std_logic_vector(3 downto 0);
   signal next_state          :std_logic_vector(3 downto 0);
   

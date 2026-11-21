@@ -32,7 +32,7 @@ add wave -noupdate /top_tb/uut/btn_sync
 add wave -noupdate -radix unsigned /top_tb/uut/input
 add wave -noupdate -radix unsigned /top_tb/uut/a
 add wave -noupdate -radix unsigned /top_tb/uut/b
-add wave -noupdate -radix unsigned /top_tb/uut/add_SUB
+add wave -noupdate -radix unsigned /top_tb/uut/add_sub
 add wave -noupdate -radix unsigned /top_tb/uut/bcd
 add wave -noupdate -radix unsigned /top_tb/uut/result
 add wave -noupdate -radix Display /top_tb/uut/one_out

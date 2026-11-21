@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
--- Nathaniel Valla
--- Lab_5 top
+-- Emily Francisco
+-- lab55 top
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -152,7 +152,7 @@ begin
   end process;
   
   
-  plus_one: generic_add_sub   
+ add: generic_add_sub   
     generic map(
       bits => 8   
     )
@@ -184,7 +184,7 @@ begin
       sync_out          => input_sync
     );
 
-  state_changer: State_machine  
+  states: state_machine  
     port map(        
       clk            => clk,
       reset          => reset,
@@ -192,7 +192,7 @@ begin
       state          => state
     );
     
-  presto_chango: double_dabble
+  dabble: double_dabble
     generic map(
       bits => 9   
     )
@@ -203,7 +203,7 @@ begin
       hundreds        =>hundreds
     );  
   
-  display_one: seven_seg  
+  disp_one: seven_seg  
     port map(        
       clk            => clk,
       reset          => reset,
@@ -211,7 +211,7 @@ begin
       seven_seg_out  => one_out
     );
   
-  display_ten: seven_seg  
+  disp_ten: seven_seg  
     port map(        
       clk            => clk,
       reset          => reset,
@@ -219,7 +219,7 @@ begin
       seven_seg_out  => ten_out
     );
     
-  display_hun: seven_seg  
+  disp_hun: seven_seg  
     port map(        
       clk            => clk,
       reset          => reset,

@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+-- Dr. Kaputa
+-- add/sub
+-------------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity add_sub is
+  generic (
+    bits    : integer := 4
+  );
+  port (
+    a           : in  std_logic_vector(bits-2 downto 0);
+    b           : in  std_logic_vector(bits-2 downto 0);
+    add_button  : in std_logic;
+    sub_button  : in std_logic;
+    clk         : in std_logic;
+    result      : out std_logic_vector(bits-1 downto 0)
+  );
+end entity add_sub;
+
+architecture beh of add_sub is
+
+signal add_temp   : std_logic_vector(bits-1 downto 0);
+signal sub_temp   : std_logic_vector(bits-1 downto 0);
+signal add_on : std_logic;
+signal sub_on : std_logic;
+
+begin
+  add_temp  <= std_logic_vector(unsigned("0" & a) + unsigned("0" & b));
+  sub_temp  <= std_logic_vector(unsigned("0" & a) - unsigned("0" & b));
+process(add_button, sub_button,clk)
+begin 
+        if (add_button = '1') then
+            add_on <= '1';
+			sub_on <= '0';
+        elsif (sub_button = '1') then
+            sub_on <= '1';
+			add_on <= '0';
+        end if;
+	end process;
+
+process (a, b)
+  begin
+        if (add_on = '1') then
+            result <= add_temp;
+        elsif (sub_on = '1') then
+            result <= sub_temp;
+        end if;
+  end process;
+end beh;

@@ -35,7 +35,7 @@ architecture behavior of seven_seg is
     constant BLANK : std_logic_vector(6 DOWNTO 0) := "1111111";
 
 begin
-    case: process (bcd, reset)
+    caseMethod: process (bcd, reset)
         begin
         case bcd is
             when "0000" => 
@@ -77,6 +77,6 @@ begin
     if(reset='1') then
       seven_seg_out <= BLANK;
     end if;
-    end process case;
+    end process caseMethod;
 
 end architecture behavior;

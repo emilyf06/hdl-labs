@@ -1,10 +1,11 @@
 -------------------------------------------------------------------------------
 -- Emily Francisco
--- add sub top
--------------------------------------------------------------------------------library ieee;
+-- add/sub top
+-------------------------------------------------------------------------------
+library ieee;
 use ieee.std_logic_1164.all;
 
-entity top is
+entity add_sub_top is
     port (
 		a          : in  std_logic_vector(2 downto 0);
         b          : in  std_logic_vector(2 downto 0);
@@ -16,9 +17,9 @@ entity top is
 		b_num_out  : out std_logic_vector(6 downto 0);
 		result_out : out std_logic_vector(6 downto 0)
 	);
-end entity top;
+end entity add_sub_top;
 
-architecture arch of top is
+architecture arch of add_sub_top is
 
 component synchronizer is
     generic (
@@ -60,8 +61,8 @@ component add_sub is
   );
 end component add_sub;
 
-signal a_pad         : std_logic_vector(3 downto 0);
-signal b_pad         : std_logic_vector(3 downto 0);
+signal a_4bit         : std_logic_vector(3 downto 0);
+signal b_4bit         : std_logic_vector(3 downto 0);
 signal a_synchronized : std_logic_vector(2 downto 0);
 signal b_synchronized : std_logic_vector(2 downto 0);
 signal add_enable     : std_logic;
@@ -100,13 +101,13 @@ begin
 	hex4:seven_seg
 	    port map (
 			reset => reset,
-            bcd => a_pad,
+            bcd => a_4bit,
 			seven_seg_out => a_num_out
 		);
 	hex2:seven_seg
 	    port map (
 			reset => reset,
-            bcd => b_pad,
+            bcd => b_4bit,
 			seven_seg_out => b_num_out
 		);
 	hex0:seven_seg
@@ -125,11 +126,11 @@ begin
 			result => add_sub_result
 		);
 		
-	--padded 
+	--Make 4 bit signals for SSD
 	process(a_synchronized, b_synchronized)
 	begin
-	a_pad <= '0' & a_synchronized;
-	b_pad <= '0' & b_synchronized;
+	a_4bit <= '0' & a_synchronized;
+	b_4bit <= '0' & b_synchronized;
 	end process;
 
 end arch;

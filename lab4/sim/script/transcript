@@ -12,8 +12,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # vcom -reportprogress 300 -93 -work work ../../src/add_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -21,30 +22,30 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity add_sub
 # -- Compiling architecture beh of add_sub
-# End time: 23:38:54 on Nov 20,2026, Elapsed time: 0:00:00
+# End time: 00:25:31 on Nov 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # vcom -reportprogress 300 -93 -work work ../../src/add_sub_top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity add_sub_top
 # -- Compiling architecture arch of add_sub_top
-# End time: 23:38:54 on Nov 20,2026, Elapsed time: 0:00:00
+# End time: 00:25:31 on Nov 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
 # -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 23:38:54 on Nov 20,2026, Elapsed time: 0:00:00
+# End time: 00:25:31 on Nov 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -52,20 +53,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity seven_seg
 # -- Compiling architecture behavior of seven_seg
-# End time: 23:38:54 on Nov 20,2026, Elapsed time: 0:00:00
+# End time: 00:25:31 on Nov 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer
 # -- Compiling architecture arch of synchronizer
-# End time: 23:38:54 on Nov 20,2026, Elapsed time: 0:00:00
+# End time: 00:25:31 on Nov 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # vcom -reportprogress 300 -93 -work work ../src/add_sub_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -74,10 +75,10 @@
 # -- Compiling entity add_sub_tb
 # -- Compiling architecture arch of add_sub_tb
 # ** Warning: ../src/add_sub_tb.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 23:38:54 on Nov 20,2026, Elapsed time: 0:00:00
+# End time: 00:25:31 on Nov 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -voptargs="+acc" add_sub_tb 
-# Start time: 23:38:54 on Nov 20,2026
+# Start time: 00:25:31 on Nov 21,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -89,6 +90,11 @@
 # Loading work.rising_edge_synchronizer(beh)#1
 # Loading work.seven_seg(behavior)#1
 # Loading work.add_sub(beh)#1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: elf3179  Hostname: GOL-1360-01  ProcessID: 27828
+#           Attempting to use alternate WLF file "./wlftczyj9y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftczyj9y
 # ** Note: ********* Start TB *********
 #    Time: 60 ns  Iteration: 0  Instance: /add_sub_tb
 # ** Note: ********* End TB *********

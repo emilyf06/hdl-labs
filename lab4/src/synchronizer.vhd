@@ -1,35 +1,31 @@
--------------------------------------------------------------------------------
--- Dr. Kaputa
--- synchronizer example
--------------------------------------------------------------------------------
 library ieee;
-use ieee.std_logic_1164.all;      
+use ieee.std_logic_1164.all;
 
-entity synchronizer is 
-  port (
-    clk               : in std_logic;
-    reset             : in std_logic;
-    async_in          : in std_logic;
-    sync_out          : out std_logic
-  );
-end synchronizer;
+entity synchronizer is
+    generic (
+        bits    : integer := 3
+    );
+    port (
+        input   : in  std_logic_vector(bits-1 downto 0);
+        clk     : in std_logic;
+        reset   : in std_logic;
+        output  : out std_logic_vector(bits-1 downto 0)
+    );
+end entity synchronizer;
 
-architecture beh of synchronizer is
--- signal declarations
-signal flop1     : std_logic;
-signal flop2     : std_logic;
+architecture arch of synchronizer is
 
-begin 
-double_flop :process(reset,clk,async_in)
-  begin
-    if reset = '1' then
-      flop1 <= '0';   
-      flop2 <= '0';	
-    elsif rising_edge(clk) then
-      flop1 <= async_in;
-      flop2 <= flop1;
-    end if;
-end process;
-
-sync_out <= flop2;
-end beh; 
+    signal temp_hold : std_logic_vector(bits-1 downto 0);
+    
+    begin
+        process (clk, reset)
+        begin
+            if (reset = '1') then
+            temp_hold <= "000";
+            output <= "000";
+            elsif (clk'event and clk = '1') then
+                temp_hold <= input;
+                output <= temp_hold;
+            end if;
+        end process;
+    end arch;
